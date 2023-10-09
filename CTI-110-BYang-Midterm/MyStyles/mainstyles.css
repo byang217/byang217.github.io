@@ -1,0 +1,101 @@
+/* da standard */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* #8F5D46 */
+/* #DC94EE */
+
+* {
+    background-color: #ffe5b6;
+    font-family: 'VT323', monospace;
+    color: #8F5D46;
+}
+
+body {
+    margin: 0;
+    display: grid;
+}
+
+
+/* header-start */
+.index-header {
+    display: flex;
+    border: 3px solid #DC94EE;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.index-header a.mylogo, .index-header img {
+    height: 80px;
+    width: 80px;
+}
+
+.index-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline-flex;
+    gap: 69px;
+}
+
+.index-nav a, .index-nav li {
+    text-decoration: none;
+    font-size: large;
+}
+/* header-end*/
+
+h1.page-name {
+    justify-self: center;
+}
+
+/* main-start */
+.same-main {
+    border: 3px solid #DC94EE;
+    width: 60%;
+    height: 600px;
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.same-section {
+    width: 95%;
+    height: 95%;
+    display: inline;
+    overflow: hidden scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.same-section::-webkit-scrollbar {
+width: 10px;
+}
+  
+.same-section::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+.same-section::-webkit-scrollbar-thumb {
+background: #DC94EE; 
+border-radius: 10px;
+}
+  
+.same-section::-webkit-scrollbar-thumb:hover {
+background: #ca63e4; 
+} 
+
+.same-section h2, .same-section p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.same-section div {
+    width: auto;
+    height: auto;
+    scroll-snap-align: start;
+    margin: 0 5% 15%;
+}
+
+/* main-end */
